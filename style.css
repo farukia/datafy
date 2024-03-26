@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat',sans-serif;
+  background-color: whitespoke;
+  margin: 0;
+  color: black;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.navbar {
+  background-color: #ffffff; 
+  box-shadow: 0 0px 11px #4554d4;
+  /** #1f5de3; **/
+  overflow: hidden;
+  margin: 0;
+  font-size: 25px;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #292929;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
+
+.navbar .left {
+  float: left;
+  display:block;
+  color: #292929;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  transition-duration:0.5s;
+}
+
+.navbar a:hover {
+  background-color: #4554d5;
+  color: white;
+  transition: 0.5s;
+}
+
+h1 {
+  font-size: 75px;
+  text-emphasis: bold; 
+  margin: 20px;
+}
+
+h2 {
+  margin: 20px;
+  font-size: 30px;
+  color: #4554d5;
+}
+
+button {
+  color: white;
+  background-color: #4554d5;
+  text-align: center;
+  padding: 20px 20px;
+  width: 200px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid transparent;
+  transition-duration: 0.5s;
+  font-size: 17px;
+}
+
+button:hover {
+  color:#4554d5;
+  background-color: white;
+  border: 2px solid #4554d5;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.bluecontainer {
+  background-color: #4554d5;
+  margin-top: 100px;
+  width: auto;
+  height: auto;
+  color: white;
+  font-family: sans-serif;
+}
+
+.bluecontainer p {
+  padding-left: calc(10% + 10px);
+  padding-right: calc(10% + 10px);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer {
+  background-color: #4554d5;
+  font-family: sans-serif;
+  display: inline-block;
+  width: 100%;
+  padding: 40px 0;
+  margin-top: 40px;
+  overflow-x: hidden;
+  color: white;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  width: 22%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 12px 12px 0px 1px #4554d5;
+  border: 2px solid #4554d5;
+  margin: 20px;
+  transition-duration: 0.5s;
+  float: left;
+}
+
+.card:hover {
+  transform: translateX(-2px) translateY(-5px);
+  box-shadow: 14px 17px 0px 1px #4554d5;
+  transition-duration: 0.5s;
+}
+
+.polaroid img {
+  height: 200px;
+  filter: grayscale(300%);
+  border-radius: 40px;
+  background-color: white;
+  margin: 0 auto;
+}
+.polaroid {
+  padding: 10px 10px 4px 10px;
+  box-shadow: 0px 0px 11px #4554d5;
+  text-align: center;
+  display: inline-grid;
+  width: 300px;
+  font-size: 20px;
+  margin: 20px;
+  transition-duration: 0.5s;
+  float: center;
+  border-radius: 30px;
+  color: black;
+}
+
+.treelink {
+  font-size: 100px;
+  margin-left:auto;
+  margin-right: auto;
+  display: flex;
+  color: white;
+  background-color: #4554d5;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.treelink p {
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.treelink h3 {
+  color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
